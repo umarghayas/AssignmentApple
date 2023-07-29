@@ -1,0 +1,35 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: chocolate;
+}
+a{
+    text-decoration: none;
+}
+header{
+    margin: 0;
+    padding: 10px 0;
+    background-color: #fafafc;
+    /* height: 40px; */
+    /* border: 1px solid red; */
+}
+ul{
+    margin: 0;
+    list-style: none;
+    text-align: center;
+    /* display: inline-block; */
+}
+ul img{
+    position: relative;
+    top: 3px;
+    width: 15px;
+    display: inline-block;
+}
+li{
+    font-size: 12px;
+    color: #666666;
+    font-weight: 500;
+    display: inline-block;
+    padding: 0 20px;
+}
