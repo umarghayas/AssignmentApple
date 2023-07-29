@@ -23,13 +23,35 @@ ul{
 ul img{
     position: relative;
     top: 3px;
-    width: 15px;
+    width: 12px;
     display: inline-block;
 }
+div{
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    /* border: 1px solid red; */
+}
+div p{
+    text-align: center;
+    color: #666666;
+    padding: 10px 0;
+    margin: 0;
+    font-family: sans-serif;
+}
 li{
-    font-size: 12px;
+    font-size: 11px;
     color: #666666;
     font-weight: 500;
     display: inline-block;
     padding: 0 20px;
+}
+li:last-child{
+    padding: 0 5px;
+}
+.highlight{
+    color: #3f8cd9;
+}
+.highlight:hover{
+    text-decoration: underline;
 }
