@@ -2,18 +2,18 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
-    background-color: chocolate;
+    /* background-color: chocolate; */
 }
 
 body * {
     margin: 0;
     padding: 0;
 }
-
-a {
-    text-decoration: none;
+.navbar{
+    position: sticky;
+    top: 0;
+    z-index: 100;
 }
-
 header {
     margin: 0;
     padding: 10px 0;
@@ -22,7 +22,7 @@ header {
     /* border: 1px solid red; */
 }
 
-ul {
+header ul {
     margin: 0;
     list-style: none;
     text-align: center;
@@ -52,7 +52,7 @@ div p {
     font-family: sans-serif;
 }
 
-li {
+header li {
     font-size: 11px;
     color: #666666;
     font-weight: 500;
@@ -60,7 +60,7 @@ li {
     padding: 0 20px;
 }
 
-li:last-child {
+header li:last-child {
     padding: 0 5px;
 }
 
@@ -87,7 +87,8 @@ h2 {
 
 .sec1 p,
 .sec2 p,
-.sec3 p {
+.sec3 p,
+.container p {
     display: inline-block;
     font-size: 20px;
     padding: 0 10px;
@@ -121,26 +122,44 @@ h2 {
     color: #1d1d1f;
 }
 
+div h3 {
+    padding: 10px 0;
+    font-size: 18px;
+    color: #666666;
+    font-weight: 400;
+}
+
+.container h1 {
+    font-size: 38px;
+}
+
+.container h2 {
+    font-size: 20px;
+}
+
 .container {
     display: grid;
     grid-template-columns: 50% 50%;
     grid-gap: 10px;
-    margin: 0 10px;
+    margin: 0 10px 10px 10px;
 }
 
 .tile {
-    height: 620px;
-    width: 1200px;
+    height: 600px;
+    width: auto;
     background-color: #f0f0f0;
-    padding: 20px;
+    /* padding: 20px; */
+    background-color: #1d1d1f;
     text-align: center;
-    background-size: 1550px;
+    /* background-size: 1500px 600px; */
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 #tile1 {
     background-image: url(./images/promo_bts2023_startframe__exvt2t1iuxme_large.jpg);
     background-position: center;
-
+    background-repeat: no-repeat;
 }
 
 #tile2 {
@@ -161,9 +180,126 @@ h2 {
     background-position: center;
 }
 
+#tile4 img {
+    position: relative;
+    top: 10px;
+}
+
 #tile2 div {
     background: none;
     display: inline-block;
     position: relative;
-    top: 350px;
+    top: 400px;
+}
+
+#tile5 {
+    background-image: url(./images/promo_hello_kitty__cv6gojq3rd8i_large.jpg);
+    background-position: center;
+}
+
+#tile6 {
+    background-image: url(images/tile__cauwwcyyn9hy_large.jpg);
+    background-position: center;
+}
+
+#tile3 img,
+#tile5 img,
+#tile6 img {
+    padding-top: 70px;
+    padding-bottom: 5px;
+}
+
+.lowerbody,
+.lowerbody * {
+    background-color: #f5f5f7;
+}
+
+.lower {
+    margin: 10px 0;
+    /* border: 1px solid red; */
+    color: #6e6e73;
+    font-size: 12px;
+    text-align: left;
+    margin: 0 auto;
+    width: 50%;
+}
+
+.numberedlist {
+    margin: 5px 0;
+    list-style: decimal;
+    list-style-position: inside;
+}
+
+.list {
+    /* border: 2px solid #3f8cd9; */
+    margin: 0 auto;
+    background-color: inherit;
+}
+
+.list * ,
+.lowernav * {
+    padding: 7px 0;
+}
+
+.list ul,
+.lowernav ul,
+.footer ul {
+    list-style: none;
+}
+.numberedlist a{
+    color: #28282a;
+}
+.numberedlist a:visited{
+    color: #28282a;
+}
+.list hr {
+    border: none;
+    padding: 0;
+    margin: 10px 0;
+    border-top: 1px solid rgba(128, 128, 128, 0.649);
+}
+.lowernav b{
+    color: #28282a;
+} 
+.lowernav{
+    /* border: 2px dashed blue; */
+    display: flex;
+    justify-content: space-between;
+}
+.lowernav a{
+    color: #0066cc;
+    text-decoration: underline;
+}
+.lowernav>div {
+    display: inline-flex;
+    width: 20%;
+    box-sizing: border-box;
+    flex-direction: column;
+    align-items: flex-start;
+    /* border: 1px solid red; */
+    background-color: inherit;
+    /* background-color: #666666; */
+}
+.footer{
+    position: relative;
+}
+.footer p{
+    text-align: left;
+    display: inline-block;
+    font-size: 12px;
+}
+.footer ul{
+    display: inline-block;
+    color: #1d1d1f;
+    font-size: 14px;
+    text-align: center;
+    padding: 1px 25px;
+    margin: 0 auto;
+}
+.footer li{
+    display: inline-block;
+}
+.footer p:last-child{
+    position: absolute;
+    right: 0;
 }
